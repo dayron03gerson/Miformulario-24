@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(circle at top left, #3b3328, transparent 35%),
+        linear-gradient(135deg, #0b0b0b, #171512);
+
+    color: #ffffff;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor {
+    width: 100%;
+    max-width: 750px;
+
+    padding: 45px;
+
+    background: #151515;
+
+    border: 1px solid #34302a;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.55);
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mini-titulo {
+    color: #c6a36a;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.encabezado h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.encabezado p:last-child {
+    color: #929292;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* CAMPOS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    color: #d8d8d8;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #0d0d0d;
+    color: #ffffff;
+
+    border: 1px solid #373737;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #666;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #c6a36a;
+    box-shadow: 0 0 12px rgba(198, 163, 106, 0.12);
+}
+
+
+/* SELECT */
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    background: #151515;
+    color: white;
+}
+
+
+/* MENSAJE */
+
+textarea {
+    min-height: 220px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+
+/* CHECKBOX */
+
+.aceptacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aceptacion input {
+    width: 16px;
+    height: 16px;
+    accent-color: #c6a36a;
+}
+
+.aceptacion label {
+    color: #858585;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* BOTÓN */
+
+button {
+    margin-top: 5px;
+
+    padding: 17px;
+
+    border: 1px solid #c6a36a;
+
+    background: #c6a36a;
+    color: #111111;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button span {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+button:hover {
+    background: transparent;
+    color: #c6a36a;
+
+    transform: translateY(-2px);
+}
+
+
+/* PIE */
+
+.pie-formulario {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid #292929;
+}
+
+.pie-formulario p {
+    color: #6f6f6f;
+
+    font-family: Georgia, serif;
+    font-size: 13px;
+
+    letter-spacing: 3px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .contenedor {
+        padding: 30px 20px;
+    }
+
+    .encabezado h1 {
+        font-size: 32px;
+    }
+
+    .fila {
+        grid-template-columns: 1fr;
+    }
+
+    textarea {
+        min-height: 180px;
+    }
+}

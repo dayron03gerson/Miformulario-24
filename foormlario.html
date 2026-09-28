@@ -1,0 +1,152 @@
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | Marca de Ropa</title>
+
+    <link rel="stylesheet" href="estylo.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="encabezado">
+            <p class="mini-titulo">NUEVA COLECCIÓN</p>
+            <h1>Tu estilo, tu esencia.</h1>
+            <p>
+                Completa tus datos y descubre las prendas que tenemos
+                preparadas para ti.
+            </p>
+        </div>
+
+        <form>
+
+            <div class="fila">
+
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre"
+                           placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Número de teléfono</label>
+                    <input type="tel" id="telefono"
+                           placeholder="Ej. 987 654 321">
+                </div>
+
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo"
+                       placeholder="ejemplo@correo.com">
+            </div>
+
+            <div class="campo">
+                <label for="ubicacion">Ubicación</label>
+                <input type="text" id="ubicacion"
+                       placeholder="Ciudad, distrito o dirección">
+            </div>
+
+            <div class="fila">
+
+                <div class="campo">
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria">
+                        <option>Seleccionar categoría</option>
+                        <option>Mujer</option>
+                        <option>Hombre</option>
+                        <option>Unisex</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="talla">Talla</label>
+                    <select id="talla">
+                        <option>Seleccionar talla</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="fila">
+
+                <div class="campo">
+                    <label for="estilo">Estilo favorito</label>
+                    <select id="estilo">
+                        <option>Seleccionar estilo</option>
+                        <option>Casual</option>
+                        <option>Elegante</option>
+                        <option>Urbano</option>
+                        <option>Deportivo</option>
+                        <option>Clásico</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="prenda">Prenda de interés</label>
+                    <select id="prenda">
+                        <option>Seleccionar prenda</option>
+                        <option>Polos</option>
+                        <option>Camisas</option>
+                        <option>Pantalones</option>
+                        <option>Vestidos</option>
+                        <option>Chaquetas</option>
+                        <option>Accesorios</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="campo">
+                <label for="pago">Método de pago</label>
+                <select id="pago">
+                    <option>Seleccionar método de pago</option>
+                    <option>Tarjeta de crédito</option>
+                    <option>Tarjeta de débito</option>
+                    <option>Yape</option>
+                    <option>Plin</option>
+                    <option>Transferencia bancaria</option>
+                    <option>Efectivo</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje o consulta</label>
+                <textarea id="mensaje"
+                          placeholder="Cuéntanos qué prenda estás buscando, algún detalle de tu pedido o cualquier consulta..."></textarea>
+            </div>
+
+            <div class="aceptacion">
+                <input type="checkbox" id="aceptar">
+                <label for="aceptar">
+                    Deseo recibir información sobre nuevas colecciones,
+                    promociones y novedades.
+                </label>
+            </div>
+
+            <button type="submit">
+                ENVIAR SOLICITUD
+                <span>→</span>
+            </button>
+
+        </form>
+
+        <div class="pie-formulario">
+            <p>Moda • Calidad • Estilo</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
